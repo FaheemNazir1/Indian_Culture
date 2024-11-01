@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Ensures the video stays contained */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Added gradient for better text visibility */
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Places the video behind the text */
+    transform: translate(-50%, -50%);
+    filter: brightness(50%); /* Low enhancement for a darker video */
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em; /* Increased font size for prominence */
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Enhanced shadow for better visibility */
+    color: #ffb300; /* Set h1 color to saffron */
+    line-height: 1.2; /* Improved line height for better readability */
+}
+
+.explore-button {
+    margin-top: 20px;
+    padding: 15px 40px; /* Increased padding for a larger button */
+    font-size: 1.5em; /* Increased font size for the button */
+    color: white;
+    background-color: #ffcc00; /* Saffron color */
+    border: none;
+    border-radius: 8px; /* More rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.explore-button:hover {
+    background-color: #ffb300; /* Darker saffron on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px; /* Align with other content */
+    margin: auto; /* Center the footer */
+}

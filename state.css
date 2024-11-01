@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f5f5dc; /* Light beige */
+    color: #333; 
+    overflow: hidden; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsl(73, 100%, 50%);
+    font-size: 4rem; 
+    text-align: center;
+    z-index: 1;
+    transition: opacity 1s ease-out; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.heritage-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background: rgba(255, 204, 0, 0.5); /* Light saffron color */
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    width: 90%; 
+    max-width: 800px; 
+    overflow: auto; 
+    height: 80vh; 
+}
+
+h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+    color: #d35400; /* Orange color for the main heading */
+}
+
+h2 {
+    font-size: 2rem; 
+    margin-top: 20px; 
+    color: #2980b9; /* Blue color for subheadings */
+}
+
+p, ul {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    margin: 15px 0; 
+    color: #2c3e50; /* Darker color for paragraphs and lists */
+}
+
+.back-button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Maintain the top margin */
+}
+.back-button {
+    position: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e67e22; /* Bright orange for the button */
+    border: none;
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.back-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 200px; 
+    margin: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+.footer {
+    position: fixed; /* Keep it fixed at the bottom */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: background for contrast */
+    padding: 10px; /* Padding for spacing */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the text */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Text color */
+}
+
+.highlight {
+    color: #ffcc00; /* Highlight text color */
+    font-weight: bold; /* Make it bold for emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Optional: add a shadow for better visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners */
+}
+
